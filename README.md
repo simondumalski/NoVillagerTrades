@@ -1,28 +1,13 @@
 # NoVillagerTrades
-NoVillagerTrades is a Minecraft plugin that disables trading with villagers.
+NoVillagerTrades is a Minecraft plugin that disables trading with villagers. Server admins may want to disable villager trading to prevent the collection of certain materials, or to limit their availability, thus increasing their value.
 
 ## Installation
-- Downloaded the latest jar from the [releases tab](https://github.com/simondumalski/NoVillagerTrades/releases), and drag it into your `plugins` folder.
-- Start the server!
-- **(OPTIONAL)** Configure the `config.yml` to your liking and restart the server or run the command `/novillagertrades reload`.
+1. Download the latest plugin jar from the [releases tab](https://github.com/simondumalski/NoVillagerTrades/releases) and drag it into your `plugins` folder
+2. Start your server
+3. That's it!
+
 ## Usage
-### Commands
-- `/novillagertrades reload` - Reloads the plugin config.yml.
+The plugin is completely **plug'n'play** and requires no configuration whatsoever!
 
 ### Permissions
-- `novillagertrades.bypass` - Allows player to bypass the villager trading blocker.
-
-### Configuration
-You can modify the messages in the `config.yml` to your liking!
-
-```yaml
-# Plugin message
-messages:
-  # Sent to admins when they reload the config.yml
-  reload: '&aSuccessfully reloaded the config.yml!'
-  # Sent to players when they try to trade with villagers
-  no-trade: '&cVillager trading is disabled at this time!'
-  # Players with the permission node 'novillagertrades.bypass' can bypass the villager trading blocker
-  # Sent to players when they try to trade with villagers and have the above permission node
-  bypass: '&cYou have bypassed the villager trading blocker!'
-```  
+- `novillagertrades.bypass` - Allows players to bypass the villager trading blocker.
