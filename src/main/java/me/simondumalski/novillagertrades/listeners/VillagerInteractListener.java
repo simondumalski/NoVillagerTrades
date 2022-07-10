@@ -1,6 +1,5 @@
 package me.simondumalski.novillagertrades.listeners;
 
-import me.simondumalski.novillagertrades.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -10,19 +9,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 
 public class VillagerInteractListener implements Listener {
-
-    /**
-     * Instance of the main plugin class
-     */
-    private final Main plugin;
-
-    /**
-     * Constructor for the VillagerInteractListener class
-     * @param plugin Instance of the main plugin class, used for accessing the config.yml
-     */
-    public VillagerInteractListener(Main plugin) {
-        this.plugin = plugin;
-    }
 
     @EventHandler
     public void onVillagerTrade(PlayerInteractEntityEvent e) {
@@ -40,33 +26,16 @@ public class VillagerInteractListener implements Listener {
 
         //Check if the player can bypass the trading blocker
         if (player.hasPermission("novillagertrades.bypass")) {
-
-            //Get the bypass message from the config.yml
-            String message = plugin.getConfig().getString("messages.bypass");
-
-            //Check if the message is valid
-            if (message == null) {
-                message = "messages.bypass";
-            }
-
-            //Send the message to the player
-            player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
+            //Send the player a message
+            player.sendMessage(ChatColor.RED + "You have bypassed the villager trading blocker!");
             return;
         }
 
-        //Cancel the interact event
+        //Cancel the villager interact event
         e.setCancelled(true);
 
-        //Get the no-trade message from the config.yml
-        String message = plugin.getConfig().getString("messages.no-trade");
-
-        //Check if the message is valid
-        if (message == null) {
-            message = "messages.no-trade";
-        }
-
-        //Send the message to the player
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
+        //Send the player a message
+        player.sendMessage(ChatColor.RED + "Villager trading is currently disabled!");
 
     }
 
