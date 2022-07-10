@@ -35,7 +35,7 @@ public class VillagerInteractListener implements Listener {
         e.setCancelled(true);
 
         //Send the player a message
-        player.sendMessage(ChatColor.RED + "Villager trading is currently disabled!");
+        player.sendMessage(ChatColor.RED + "Trading with villagers is currently disabled!");
 
     }
 
