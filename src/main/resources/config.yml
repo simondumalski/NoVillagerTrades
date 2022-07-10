@@ -1,9 +1,0 @@
-# Plugin message
-messages:
-  # Sent to admins when they reload the config.yml
-  reload: '&aSuccessfully reloaded the config.yml!'
-  # Sent to players when they try to trade with villagers
-  no-trade: '&cVillager trading is disabled at this time!'
-  # Players with the permission node 'novillagertrades.bypass' can bypass the villager trading blocker
-  # Sent to players when they try to trade with villagers and have the above permission node
-  bypass: '&cYou have bypassed the villager trading blocker!'
