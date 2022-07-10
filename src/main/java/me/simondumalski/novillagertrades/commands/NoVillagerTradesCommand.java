@@ -10,8 +10,15 @@ import org.bukkit.entity.Player;
 
 public class NoVillagerTradesCommand implements CommandExecutor {
 
+    /**
+     * Instance of the main plugin class
+     */
     private final Main plugin;
 
+    /**
+     * Constructor for the NoVillagerTradesCommand class
+     * @param plugin Instance of the main plugin class, used for accessing the config.yml
+     */
     public NoVillagerTradesCommand(Main plugin) {
         this.plugin = plugin;
     }

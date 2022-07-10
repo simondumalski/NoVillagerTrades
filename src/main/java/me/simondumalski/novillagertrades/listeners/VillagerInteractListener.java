@@ -11,8 +11,15 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 
 public class VillagerInteractListener implements Listener {
 
+    /**
+     * Instance of the main plugin class
+     */
     private final Main plugin;
 
+    /**
+     * Constructor for the VillagerInteractListener class
+     * @param plugin Instance of the main plugin class, used for accessing the config.yml
+     */
     public VillagerInteractListener(Main plugin) {
         this.plugin = plugin;
     }
