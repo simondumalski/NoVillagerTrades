@@ -1,0 +1,7 @@
+name: NoVillagerTrades
+version: '${project.version}'
+description: '${project.description}'
+authors: [ Saymoan ]
+api-version: 1.18
+main: me.simondumalski.novillagertrades.Main
+prefix: NoVillagerTrades
