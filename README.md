@@ -2,7 +2,7 @@
 NoVillagerTrades is a Minecraft plugin that disables trading with villagers.
 
 ## Installation
-- Downloaded the lastest jar from the [releases tab](https://github.com/simondumalski/NoVillagerTrades/releases), and drag it into your `plugins` folder.
+- Downloaded the latest jar from the [releases tab](https://github.com/simondumalski/NoVillagerTrades/releases), and drag it into your `plugins` folder.
 - Start the server!
 - **(OPTIONAL)** Configure the `config.yml` to your liking and restart the server or run the command `/novillagertrades reload`.
 ## Usage
