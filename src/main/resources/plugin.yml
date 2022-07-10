@@ -5,13 +5,7 @@ authors: [ Saymoan ]
 api-version: 1.18
 main: me.simondumalski.novillagertrades.Main
 prefix: NoVillagerTrades
-commands:
-  novillagertrades:
-    description: Allows admins to reload the config.yml
 permissions:
-  novillagertrades.admin:
-    description: Allows admins to reload the config.yml
-    default: op
   novillagertrades.bypass:
-    description: Allows players to bypass the trading blocker
+    description: Allows players to bypass the villager trading blocker
     default: false
